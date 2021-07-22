@@ -1,5 +1,3 @@
-let words = [];
-let a = 3;
-let b = 2;
-words.push(`${a}.${b}`);
-console.log(words);
+let tmp = Array.from(Array(2), () => Array(2).fill(false));
+
+console.log(tmp);
