@@ -31,3 +31,6 @@ DP의 조건
 그리고 하위문제가 복잡하여 점화식으로 풀어낼 방법이 떠오르지 않을 경우 Top-down으로 많이 접근한다고 한다.
 
 https://coding-all.tistory.com/2
+
+저장하는 값(구하고자하는 값)이 무엇인지 인지하고 풀기
+https://blog.naver.com/PostView.nhn?blogId=dgsw102&logNo=221224601208
