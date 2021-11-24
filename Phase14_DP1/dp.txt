@@ -34,3 +34,5 @@ https://coding-all.tistory.com/2
 
 저장하는 값(구하고자하는 값)이 무엇인지 인지하고 풀기
 https://blog.naver.com/PostView.nhn?blogId=dgsw102&logNo=221224601208
+
+11053v2 주석 코드 공부
