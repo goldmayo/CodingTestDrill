@@ -51,7 +51,7 @@ function lowerBound(arr, target, start, end) {
 }
 
 let temp = []
-
+s
 for (let num of arr) {
   let idx = lowerBound(temp, num, 0, temp.length)
   temp[idx] = num
