@@ -12,7 +12,7 @@ DP[1] = BigInt(1);
 const getFactorial = (n) => {
   if (n == 0) return DP[0];
   if (n == 1) return DP[1];
-  for (let i = 2; i <= N; i++) {
+  for (let i = 2; i <= n; i++) {
     if (DP[n] !== 0) {
       return DP[n];
     }
