@@ -6,7 +6,7 @@ const [...input] = (
 
 let stack = [];
 let answer = "";
-
+console.log(input);
 for (let i = 0; i < input.length; i++) {
   if (input[i] === ".") break;
   for (let j = 0; j < input[i].length; j++) {
