@@ -1,7 +1,5 @@
 const abc = (
-  process.platform === "windows"
-    ? require("fs").readFileSync("/dev/stdin", "utf-8").toString().trim()
-    : `10 11 12`
+  process.platform === "windows" ? require("fs").readFileSync("/dev/stdin", "utf-8").toString().trim() : `10 11 12`
 ).split("\n");
 
 const [A, B, C] = abc[0].split(" ").map((e) => BigInt(e));
@@ -29,9 +27,7 @@ const divide = (base, power, mod) => {
     return dp[Math.log2(power)];
   }
   return (dp[Math.log2(power)] =
-    (divide(base, Math.floor(power / 2), mod) *
-      divide(base, Math.floor(power / 2), mod)) %
-    mod);
+    (divide(base, Math.floor(power / 2), mod) * divide(base, Math.floor(power / 2), mod)) % mod);
 };
 
 const createDP = (length) => {
