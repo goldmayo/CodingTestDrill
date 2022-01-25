@@ -25,7 +25,7 @@ const popMaxHeap = () => {
   let max = maxHeap[0];
   maxHeap[0] = maxHeap.pop();
   let currentIndex = 0;
-  while (currentIndex < maxHeap.length) {
+  while (true) {
     let leftChildIndex = 2 * currentIndex + 1;
     let rightChildIndex = 2 * currentIndex + 2;
     let maxIndex = currentIndex;
@@ -59,7 +59,7 @@ const popMinHeap = () => {
   let min = minHeap[0];
   minHeap[0] = minHeap.pop();
   let currentIndex = 0;
-  while (currentIndex < minHeap.length) {
+  while (true) {
     let leftChildIndex = 2 * currentIndex + 1;
     let rightChildIndex = 2 * currentIndex + 2;
     let minIndex = currentIndex;
