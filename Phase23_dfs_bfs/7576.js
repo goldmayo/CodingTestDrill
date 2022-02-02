@@ -63,6 +63,3 @@ const solution = () => {
   console.log(answer);
 };
 solution();
-/**
- * 1 토마토의 위치
- */
