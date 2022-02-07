@@ -1,3 +1,1 @@
-let tmp = Array.from(Array(2), () => Array(2).fill(false));
-
-console.log(tmp);
+4 < 4 ? console.log(true) : console.log(false);

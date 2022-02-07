@@ -14,9 +14,7 @@ while (T--) {
     const [_, kind] = iterator.next().value.split(" ");
     item[kind] = (item[kind] ?? 0) + 1;
   }
-  console.log(
-    [...Object.values(item)].reduce((acc, curr) => acc * (curr + 1), 1) - 1
-  );
+  console.log([...Object.values(item)].reduce((acc, curr) => acc * (curr + 1), 1) - 1);
 }
 /**
  * https://tesseractjh.tistory.com/123
