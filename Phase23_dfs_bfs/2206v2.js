@@ -20,6 +20,7 @@ const bfs = (x, y, z) => {
   const queue = [[x, y, z]];
   let idx = 0;
   while (idx !== queue.length) {
+    console.log(visit);
     let [qx, qy, qz] = queue[idx++];
 
     if (qx === N - 1 && qy === M - 1) {
@@ -28,6 +29,7 @@ const bfs = (x, y, z) => {
     }
     for (let i = 0; i < 4; i++) {
       let [nx, ny] = [qx + dx[i], qy + dy[i]];
+      console.log(nx, ny);
       if (!checkBound(nx, ny)) continue;
       if (visit[nx][ny][qz] === 0) {
         if (MAP[nx][ny] === 0) {
@@ -45,6 +47,7 @@ const bfs = (x, y, z) => {
   console.log(-1);
 };
 const solution = () => {
+  console.log(MAP);
   bfs(0, 0, 0);
 };
 solution();
