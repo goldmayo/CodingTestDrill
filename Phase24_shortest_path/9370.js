@@ -102,12 +102,11 @@ const solution = () => {
       const base = fromS[vertex];
       const routeA = fromS[g] + fromG[h] + fromH[vertex];
       const routeB = fromS[h] + fromH[g] + fromG[vertex];
-      console.log(base, routeA, routeB);
-      if (base !== INF && (base === routeA || base === routeB)) {
+      if (base === routeA || base === routeB) {
         answer.push(vertex);
       }
     }
-    console.log(answer.sort().join(" "));
+    console.log(answer.sort((a, b) => a - b).join(" "));
   }
 };
 solution();
