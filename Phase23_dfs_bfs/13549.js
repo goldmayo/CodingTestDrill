@@ -29,3 +29,7 @@ const solution = (start, target) => {
 
 const ans = solution(N, K);
 console.log(ans);
+/**
+ * 그래프의 가중치가 0, 1이다 BFS와 우선순위 큐를 사용하거나
+ * 0의 가중치는 큐의 맨 앞에 삽입하여 우선 순위 문제를 해결한다.
+ */
